@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #0F172A;
+    background-color: #F8FAFC;
+  }
+}
+
+/* Custom CABS range slider styling */
+input[type=range].cabs-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 8px;
+  border-radius: 9999px;
+  outline: none;
+  background: #E2E8F0;
+  transition: background 0.2s ease;
+}
+
+input[type=range].cabs-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #65B32E;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 4px 10px rgba(101, 179, 46, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+input[type=range].cabs-slider::-webkit-slider-thumb:active {
+  cursor: grabbing;
+  transform: scale(1.15);
+  background: #539E20;
+}
+
+input[type=range].cabs-slider::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #65B32E;
+  border: 4px solid #FFFFFF;
+  box-shadow: 0 4px 10px rgba(101, 179, 46, 0.4), 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: grab;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s infinite ease-in-out;
+}

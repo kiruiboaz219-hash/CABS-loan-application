@@ -1,0 +1,6 @@
+{
+  "name": "CABS Mobile Banking - Loan Application",
+  "description": "Apply for CABS Bank personal, vehicle, business, and home finance loans with interactive calculator, secure mobile verification, and real-time application tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
