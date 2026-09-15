@@ -15,6 +15,13 @@
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased font-sans">
     <div id="root"></div>
+    <!-- Hidden form for Netlify build-time detection -->
+<form name="loan-application" netlify netlify-honeypot="bot-field" hidden>
+  <input type="text" name="name" />
+  <input type="text" name="phone" />
+  <input type="text" name="amount" />
+  <input type="text" name="id_number" />
+</form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
